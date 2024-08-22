@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <XmlExtensions.SettingsMenuDef>
+        <defName>AdjustFilth</defName> <!--Can
+        be anything unique with no periods-->
+        <modId>AdjustFilth</modId> <!--MUST
+        be the same as the one entered earlier-->
+        <label>Adjust Filth</label> <!-- This is what displays as your mod's name-->
+        <settings>
+            <li Class="XmlExtensions.Setting.Slider">
+                <key>filth_multiplier</key>
+                <label>Filth Multiplier: {filth_multiplier}</label>
+                <defaultValue>0.2</defaultValue>
+                <min>0</min>
+                <max>1</max>
+                <decimals>2</decimals>
+            </li>
+        </settings>
+    </XmlExtensions.SettingsMenuDef>
+</Defs>

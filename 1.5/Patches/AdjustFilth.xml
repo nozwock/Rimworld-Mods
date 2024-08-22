@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="XmlExtensions.PatchOperationSafeAdd">
+        <xpath>Defs/TerrainDef[not(@Abstract="True")]</xpath>
+        <value>
+            <statBases></statBases>
+        </value>
+    </Operation>
+    <Operation Class="XmlExtensions.PatchOperationSafeAdd">
+        <xpath>Defs/TerrainDef[not(@Abstract="True")]/statBases</xpath>
+        <value>
+            <FilthMultiplier>1</FilthMultiplier>
+        </value>
+    </Operation>
+    <Operation Class="XmlExtensions.UseSetting">
+        <modId>AdjustFilth</modId>
+        <key>filth_multiplier</key>
+        <defaultValue>0.2</defaultValue>
+        <apply>
+            <Operation Class="XmlExtensions.PatchOperationMath">
+                <xpath>Defs/TerrainDef[not(@Abstract="True")]/statBases/FilthMultiplier</xpath>
+                <value>
+                    {filth_multiplier}
+                </value>
+                <operation>*</operation>
+            </Operation>
+        </apply>
+    </Operation>
+</Patch>
