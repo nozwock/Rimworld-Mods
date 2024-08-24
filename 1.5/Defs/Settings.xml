@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
     <XmlExtensions.SettingsMenuDef>
-        <defName>AdjustFilth</defName> <!--Can
+        <defName>CustomTweaks</defName> <!--Can
         be anything unique with no periods-->
-        <modId>AdjustFilth</modId> <!--MUST
+        <modId>anonymous189.tweaks</modId> <!--MUST
         be the same as the one entered earlier-->
-        <label>Adjust Filth</label> <!-- This is what displays as your mod's name-->
+        <label>Custom Tweaks</label> <!-- This is what displays as your mod's name-->
         <settings>
             <li Class="XmlExtensions.Setting.Slider">
                 <key>filth_multiplier</key>

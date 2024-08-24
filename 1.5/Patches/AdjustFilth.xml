@@ -13,7 +13,7 @@
         </value>
     </Operation>
     <Operation Class="XmlExtensions.UseSetting">
-        <modId>AdjustFilth</modId>
+        <modId>anonymous189.tweaks</modId>
         <key>filth_multiplier</key>
         <defaultValue>0.2</defaultValue>
         <apply>
