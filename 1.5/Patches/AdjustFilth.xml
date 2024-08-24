@@ -14,13 +14,13 @@
     </Operation>
     <Operation Class="XmlExtensions.UseSetting">
         <modId>anonymous189.tweaks</modId>
-        <key>filth_multiplier</key>
+        <key>adjustfilth_mult</key>
         <defaultValue>0.2</defaultValue>
         <apply>
             <Operation Class="XmlExtensions.PatchOperationMath">
                 <xpath>Defs/TerrainDef[not(@Abstract="True")]/statBases/FilthMultiplier</xpath>
                 <value>
-                    {filth_multiplier}
+                    {adjustfilth_mult}
                 </value>
                 <operation>*</operation>
             </Operation>

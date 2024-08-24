@@ -8,12 +8,34 @@
         <label>Custom Tweaks</label> <!-- This is what displays as your mod's name-->
         <settings>
             <li Class="XmlExtensions.Setting.Slider">
-                <key>filth_multiplier</key>
-                <label>Filth Multiplier: {filth_multiplier}</label>
+                <key>adjustfilth_mult</key>
+                <label>Filth Multiplier: {adjustfilth_mult}</label>
                 <defaultValue>0.2</defaultValue>
                 <min>0</min>
                 <max>1</max>
                 <decimals>2</decimals>
+            </li>
+            <li Class="XmlExtensions.Setting.GapLine"></li>
+            <li Class="XmlExtensions.Setting.Checkbox">
+                <label>Steel Structers</label>
+                <key>adjuststeel</key>
+                <defaultValue>true</defaultValue>
+            </li>
+            <li Class="XmlExtensions.Setting.Text">
+                <text>Adjust Steel Structure's HP and set their flamablility to 0.</text>
+            </li>
+            <li Class="XmlExtensions.Setting.ToggleableSettings">
+                <key>adjuststeel</key>
+                <caseTrue>
+                    <li Class="XmlExtensions.Setting.Slider">
+                        <key>adjuststeel_hp_mult</key>
+                        <label>Steel Structure HP Multiplier: {adjuststeel_hp_mult}</label>
+                        <defaultValue>1.5</defaultValue>
+                        <min>1</min>
+                        <max>5</max>
+                        <decimals>2</decimals>
+                    </li>
+                </caseTrue>
             </li>
         </settings>
     </XmlExtensions.SettingsMenuDef>
