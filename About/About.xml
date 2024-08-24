@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
+    <name>AdjustFilth</name>
+    <packageId>anonymous189.adjustfilth</packageId>
 	<supportedVersions>
 		<li>1.5</li>
 	</supportedVersions>
@@ -13,5 +15,6 @@
 	</modDependencies>
 	<loadAfter>
 		<li>imranfish.xmlextensions</li>
+		<li>anonymous189.customhdefs</li>
 	</loadAfter>
 </ModMetaData>
