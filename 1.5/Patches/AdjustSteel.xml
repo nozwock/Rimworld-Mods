@@ -1,22 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-    <Operation Class="XmlExtensions.PatchOperationSafeReplace">
-        <xpath>Defs/ThingDef[@ParentName="ResourceBase" and defName="Steel"]/stuffProps/statFactors</xpath>
-        <value>
-            <Flammability>0</Flammability>
-        </value>
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>anonymous189.tweaks</modId>
+        <key>steel_toggle</key>
+        <caseTrue>
+            <Operation Class="XmlExtensions.PatchOperationSafeReplace">
+                <xpath>Defs/ThingDef[@ParentName="ResourceBase" and
+                    defName="Steel"]/stuffProps/statFactors</xpath>
+                <value>
+                    <Flammability>0</Flammability>
+                </value>
+            </Operation>
+        </caseTrue>
     </Operation>
 
     <Operation Class="XmlExtensions.UseSetting">
         <modId>anonymous189.tweaks</modId>
-        <key>adjuststeel_hp_mult</key>
+        <key>steel_hp_mult</key>
         <defaultValue>1.5</defaultValue>
         <apply>
             <Operation Class="XmlExtensions.PatchOperationMath">
                 <xpath>Defs/ThingDef[@ParentName="ResourceBase" and
                     defName="Steel"]/stuffProps/statFactors/MaxHitPoints</xpath>
                 <value>
-                    {adjuststeel_hp_mult}
+                    {steel_hp_mult}
                 </value>
                 <operation>*</operation>
             </Operation>
