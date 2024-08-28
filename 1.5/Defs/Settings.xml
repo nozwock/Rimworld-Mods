@@ -15,7 +15,7 @@
                 <max>1</max>
                 <decimals>2</decimals>
             </li>
-            <li Class="XmlExtensions.Setting.Gap"></li>
+            <li Class="XmlExtensions.Setting.Gap" />
             <li Class="XmlExtensions.Setting.Checkbox">
                 <label>Steel Structers</label>
                 <key>steel_toggle</key>
@@ -34,6 +34,31 @@
                         <min>1</min>
                         <max>5</max>
                         <decimals>2</decimals>
+                    </li>
+                </caseTrue>
+            </li>
+            <li Class="XmlExtensions.Setting.Gap" />
+            <li Class="XmlExtensions.Setting.Checkbox">
+                <label>Set custom max range for all TVs</label>
+                <key>tv_toggle</key>
+                <defaultValue>false</defaultValue>
+            </li>
+            <li Class="XmlExtensions.Setting.ToggleableSettings">
+                <key>tv_toggle</key>
+                <caseTrue>
+                    <li Class="XmlExtensions.Setting.Numeric">
+                        <key>tv_max_length</key>
+                        <label>Max Length</label>
+                        <defaultValue>10</defaultValue>
+                        <min>2</min>
+                        <max>100</max>
+                    </li>
+                    <li Class="XmlExtensions.Setting.Numeric">
+                        <key>tv_width</key>
+                        <label>Width</label>
+                        <defaultValue>8</defaultValue>
+                        <min>4</min>
+                        <max>100</max>
                     </li>
                 </caseTrue>
             </li>

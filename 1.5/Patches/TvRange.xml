@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>anonymous189.tweaks</modId>
+        <key>tv_toggle</key>
+        <defaultValue>false</defaultValue>
+        <caseTrue>
+            <Operation Class="XmlExtensions.UseSettings">
+                <modId>anonymous189.tweaks</modId>
+                <keys>
+                    <li>tv_max_length</li>
+                    <li>tv_width</li>
+                </keys>
+                <defaultValues>
+                    <li>10</li>
+                    <li>8</li>
+                </defaultValues>
+                <apply>
+                    <Operation Class="XmlExtensions.PatchOperationReplace">
+                        <xpath>
+                            Defs/ThingDef[@ParentName="BuildingBase" and
+                            thingCategories[li="BuildingsJoy"]]/building[joyKind="Television"]/watchBuildingStandDistanceRange</xpath>
+                        <value>
+                            <watchBuildingStandDistanceRange>2~{tv_max_length}</watchBuildingStandDistanceRange>
+                        </value>
+                    </Operation>
+                    <Operation Class="XmlExtensions.PatchOperationReplace">
+                        <xpath>
+                            Defs/ThingDef[@ParentName="BuildingBase" and
+                            thingCategories[li="BuildingsJoy"]]/building[joyKind="Television"]/watchBuildingStandRectWidth</xpath>
+                        <value>
+                            <watchBuildingStandRectWidth>{tv_width}</watchBuildingStandRectWidth>
+                        </value>
+                    </Operation>
+                </apply>
+            </Operation>
+        </caseTrue>
+    </Operation>
+</Patch>
