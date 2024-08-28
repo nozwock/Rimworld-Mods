@@ -3,6 +3,7 @@
     <Operation Class="XmlExtensions.OptionalPatch">
         <modId>anonymous189.tweaks</modId>
         <key>steel_toggle</key>
+        <defaultValue>true</defaultValue>
         <caseTrue>
             <Operation Class="XmlExtensions.PatchOperationSafeReplace">
                 <xpath>Defs/ThingDef[@ParentName="ResourceBase" and
