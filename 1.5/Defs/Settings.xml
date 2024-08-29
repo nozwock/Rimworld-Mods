@@ -17,12 +17,9 @@
             </li>
             <li Class="XmlExtensions.Setting.Gap" />
             <li Class="XmlExtensions.Setting.Checkbox">
-                <label>Steel Structers</label>
+                <label>Adjust Steel Structure's HP and set their flamablility to 0</label>
                 <key>steel_toggle</key>
                 <defaultValue>true</defaultValue>
-            </li>
-            <li Class="XmlExtensions.Setting.Text">
-                <text>Adjust Steel Structure's HP and set their flamablility to 0.</text>
             </li>
             <li Class="XmlExtensions.Setting.ToggleableSettings">
                 <key>steel_toggle</key>
@@ -39,7 +36,7 @@
             </li>
             <li Class="XmlExtensions.Setting.Gap" />
             <li Class="XmlExtensions.Setting.Checkbox">
-                <label>Set custom max range for all TVs</label>
+                <label>Set custom range for all TVs</label>
                 <key>tv_toggle</key>
                 <defaultValue>false</defaultValue>
             </li>
@@ -47,18 +44,18 @@
                 <key>tv_toggle</key>
                 <caseTrue>
                     <li Class="XmlExtensions.Setting.Numeric">
-                        <key>tv_max_length</key>
-                        <label>Max Length</label>
-                        <defaultValue>10</defaultValue>
-                        <min>2</min>
-                        <max>100</max>
+                        <key>tv_max_length_mult</key>
+                        <label>Max Length Multiplier</label>
+                        <defaultValue>2</defaultValue>
+                        <min>1</min>
+                        <max>10</max>
                     </li>
                     <li Class="XmlExtensions.Setting.Numeric">
-                        <key>tv_width</key>
-                        <label>Width</label>
-                        <defaultValue>8</defaultValue>
-                        <min>4</min>
-                        <max>100</max>
+                        <key>tv_width_mult</key>
+                        <label>Width Multiplier</label>
+                        <defaultValue>2</defaultValue>
+                        <min>1</min>
+                        <max>10</max>
                     </li>
                 </caseTrue>
             </li>

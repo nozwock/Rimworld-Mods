@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
+    <!-- Why am I doing this to myself? Programming in XML... -->
     <Operation Class="XmlExtensions.OptionalPatch">
         <modId>anonymous189.tweaks</modId>
         <key>tv_toggle</key>
@@ -8,29 +9,57 @@
             <Operation Class="XmlExtensions.UseSettings">
                 <modId>anonymous189.tweaks</modId>
                 <keys>
-                    <li>tv_max_length</li>
-                    <li>tv_width</li>
+                    <li>tv_max_length_mult</li>
+                    <li>tv_width_mult</li>
                 </keys>
                 <defaultValues>
-                    <li>10</li>
-                    <li>8</li>
+                    <li>2</li>
+                    <li>2</li>
                 </defaultValues>
                 <apply>
-                    <Operation Class="XmlExtensions.PatchOperationReplace">
+                    <Operation Class="XmlExtensions.ForEach">
                         <xpath>
                             Defs/ThingDef[@ParentName="BuildingBase" and
                             thingCategories[li="BuildingsJoy"]]/building[joyKind="Television"]/watchBuildingStandDistanceRange</xpath>
-                        <value>
-                            <watchBuildingStandDistanceRange>2~{tv_max_length}</watchBuildingStandDistanceRange>
-                        </value>
+                        <storeIn>path</storeIn>
+                        <prefixLength>4</prefixLength>
+                        <apply>
+                            <Operation Class="XmlGetSplit.GetSplit">
+                                <xpath>{path}</xpath>
+                                <storeTo>
+                                    Defs/XmlExtensions.SlateDef[@Name="TweaksSlate"]/splitBuffer</storeTo>
+                            </Operation>
+                            <!-- <Operation Class="XmlExtensions.Log">
+                                <xpath>{path}</xpath>
+                            </Operation>
+                            <Operation Class="XmlExtensions.Log">
+                                <xpath>
+                                    Defs/XmlExtensions.SlateDef[@Name="TweaksSlate"]/splitBuffer/li</xpath>
+                            </Operation> -->
+                            <Operation Class="XmlExtensions.CreateVariable">
+                                <storeIn>tv_max_length</storeIn>
+                                <value>
+                                    Defs/XmlExtensions.SlateDef[@Name="TweaksSlate"]/splitBuffer/li[2]</value>
+                                <value2>{tv_max_length_mult}</value2>
+                                <fromXml>true</fromXml>
+                                <operation>*</operation>
+                                <apply>
+                                    <Operation Class="XmlExtensions.PatchOperationReplace">
+                                        <xpath>{path}</xpath>
+                                        <value>
+                                            <watchBuildingStandDistanceRange>2~{tv_max_length}</watchBuildingStandDistanceRange>
+                                        </value>
+                                    </Operation>
+                                </apply>
+                            </Operation>
+                        </apply>
                     </Operation>
-                    <Operation Class="XmlExtensions.PatchOperationReplace">
+                    <Operation Class="XmlExtensions.PatchOperationMath">
                         <xpath>
                             Defs/ThingDef[@ParentName="BuildingBase" and
                             thingCategories[li="BuildingsJoy"]]/building[joyKind="Television"]/watchBuildingStandRectWidth</xpath>
-                        <value>
-                            <watchBuildingStandRectWidth>{tv_width}</watchBuildingStandRectWidth>
-                        </value>
+                        <value>{tv_width_mult}</value>
+                        <operation>*</operation>
                     </Operation>
                 </apply>
             </Operation>
