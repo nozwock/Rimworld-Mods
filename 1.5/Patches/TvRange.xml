@@ -4,7 +4,7 @@
     <Operation Class="XmlExtensions.OptionalPatch">
         <modId>anonymous189.tweaks</modId>
         <key>tv_toggle</key>
-        <defaultValue>false</defaultValue>
+        <defaultValue>true</defaultValue>
         <caseTrue>
             <Operation Class="XmlExtensions.UseSettings">
                 <modId>anonymous189.tweaks</modId>
