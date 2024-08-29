@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
     <Operation Class="XmlExtensions.OptionalPatch">
-        <modId>anonymous189.tweaks</modId>
+        <modId>anonymous189.SimpleTweaks</modId>
         <key>steel_toggle</key>
         <defaultValue>true</defaultValue>
         <caseTrue>
@@ -16,7 +16,7 @@
     </Operation>
 
     <Operation Class="XmlExtensions.UseSetting">
-        <modId>anonymous189.tweaks</modId>
+        <modId>anonymous189.SimpleTweaks</modId>
         <key>steel_hp_mult</key>
         <defaultValue>1.5</defaultValue>
         <apply>

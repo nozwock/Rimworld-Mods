@@ -3,7 +3,7 @@
     <XmlExtensions.SettingsMenuDef>
         <defName>SimpleTweaks</defName> <!--Can
         be anything unique with no periods-->
-        <modId>anonymous189.tweaks</modId> <!--MUST
+        <modId>anonymous189.SimpleTweaks</modId> <!--MUST
         be the same as the one entered earlier-->
         <label>Simple Tweaks</label> <!-- This is what displays as your mod's name-->
         <settings>
