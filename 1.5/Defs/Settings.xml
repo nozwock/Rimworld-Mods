@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
     <XmlExtensions.SettingsMenuDef>
-        <defName>CustomTweaks</defName> <!--Can
+        <defName>SimpleTweaks</defName> <!--Can
         be anything unique with no periods-->
         <modId>anonymous189.tweaks</modId> <!--MUST
         be the same as the one entered earlier-->
-        <label>Custom Tweaks</label> <!-- This is what displays as your mod's name-->
+        <label>Simple Tweaks</label> <!-- This is what displays as your mod's name-->
         <settings>
             <li Class="XmlExtensions.Setting.MiddleColumn">
                 <split>0.75</split>
