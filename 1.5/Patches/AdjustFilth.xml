@@ -13,7 +13,7 @@
         </value>
     </Operation>
     <Operation Class="XmlExtensions.UseSetting">
-        <modId>anonymous189.SimpleTweaks</modId>
+        <modId>anonymous854.SimpleTweaks</modId>
         <key>filth_mult</key>
         <defaultValue>0.2</defaultValue>
         <apply>

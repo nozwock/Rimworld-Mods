@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
     <XmlExtensions.SettingsMenuDef>
-        <defName>SimpleTweaks</defName> <!--Can
-        be anything unique with no periods-->
-        <modId>anonymous189.SimpleTweaks</modId> <!--MUST
-        be the same as the one entered earlier-->
-        <label>Simple Tweaks</label> <!-- This is what displays as your mod's name-->
+        <defName>SimpleTweaks</defName>
+        <modId>anonymous854.SimpleTweaks</modId>
+        <label>Simple Tweaks</label>
+        <tKey>854ST_title</tKey>
         <settings>
             <li Class="XmlExtensions.Setting.MiddleColumn">
                 <split>0.75</split>
@@ -15,6 +14,7 @@
                     </li>
                     <li Class="XmlExtensions.Setting.Text">
                         <text>Requires a restart to apply any changes.</text>
+                        <tKey>854ST_info</tKey>
                     </li>
                     <li Class="XmlExtensions.Setting.Gap">
                         <spacing>8</spacing>
@@ -29,6 +29,7 @@
                                 <min>0</min>
                                 <max>1</max>
                                 <decimals>2</decimals>
+                                <tKey>854ST_filth</tKey>
                             </li>
                         </settings>
                     </li>
@@ -40,6 +41,7 @@
                                 <label>Adjust Steel Structure's HP and set their flamablility to 0</label>
                                 <key>steel_toggle</key>
                                 <defaultValue>true</defaultValue>
+                                <tKey>854ST_steel_toggle</tKey>
                             </li>
                             <li Class="XmlExtensions.Setting.ToggleableSettings">
                                 <key>steel_toggle</key>
@@ -51,6 +53,7 @@
                                         <min>1</min>
                                         <max>5</max>
                                         <decimals>2</decimals>
+                                        <tKey>854ST_steel_hp_mult</tKey>
                                     </li>
                                 </caseTrue>
                             </li>
@@ -64,6 +67,7 @@
                                 <label>Set custom range for all TVs</label>
                                 <key>tv_toggle</key>
                                 <defaultValue>true</defaultValue>
+                                <tKey>854ST_tv_toggle</tKey>
                             </li>
                             <li Class="XmlExtensions.Setting.ToggleableSettings">
                                 <key>tv_toggle</key>
@@ -75,6 +79,7 @@
                                         <min>1</min>
                                         <max>10</max>
                                         <decimals>2</decimals>
+                                        <tKey>854ST_tv_max_length_mult</tKey>
                                     </li>
                                     <li Class="XmlExtensions.Setting.Slider">
                                         <key>tv_width_mult</key>
@@ -83,6 +88,7 @@
                                         <min>1</min>
                                         <max>10</max>
                                         <decimals>2</decimals>
+                                        <tKey>854ST_tv_width_mult</tKey>
                                     </li>
                                 </caseTrue>
                             </li>
@@ -91,6 +97,7 @@
                     <li Class="XmlExtensions.Setting.Gap" />
                     <li Class="XmlExtensions.Setting.ResetSettings">
                         <label>Reset to Defaults</label>
+                        <tKey>854ST_reset</tKey>
                     </li>
                 </settings>
             </li>

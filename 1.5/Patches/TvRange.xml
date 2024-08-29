@@ -2,12 +2,12 @@
 <Patch>
     <!-- Why am I doing this to myself? Programming in XML... -->
     <Operation Class="XmlExtensions.OptionalPatch">
-        <modId>anonymous189.SimpleTweaks</modId>
+        <modId>anonymous854.SimpleTweaks</modId>
         <key>tv_toggle</key>
         <defaultValue>true</defaultValue>
         <caseTrue>
             <Operation Class="XmlExtensions.UseSettings">
-                <modId>anonymous189.SimpleTweaks</modId>
+                <modId>anonymous854.SimpleTweaks</modId>
                 <keys>
                     <li>tv_max_length_mult</li>
                     <li>tv_width_mult</li>

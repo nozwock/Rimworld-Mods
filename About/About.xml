@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 	<name>Simple Tweaks</name>
-	<packageId>anonymous189.SimpleTweaks</packageId>
+	<packageId>anonymous854.SimpleTweaks</packageId>
 	<supportedVersions>
 		<li>1.5</li>
 	</supportedVersions>
@@ -15,6 +15,6 @@
 	</modDependencies>
 	<loadAfter>
 		<li>imranfish.xmlextensions</li>
-		<li>anonymous189.customhdefs</li>
+		<li>anonymous854.customhdefs</li>
 	</loadAfter>
 </ModMetaData>
