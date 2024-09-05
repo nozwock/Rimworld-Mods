@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>[Og] Simple Gate Patch - ReBuild Doors and Corners</name>
+  <packageId>anonymous583.SimpleGateRebuildPatch</packageId>
+  <supportedVersions>
+    <li>1.5</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <displayName>[Og] Simple Gate</displayName>
+      <packageId>Oganesson.simple.gate</packageId>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Oganesson.simple.gate</li>
+  </loadAfter>
+</ModMetaData>

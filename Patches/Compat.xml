@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="OgGate"]/building/doorTopGraphic/drawSize</xpath>
+        <value>
+            <drawSize>(3,2)</drawSize>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="OgGate"]/building/doorSupportGraphic/drawSize</xpath>
+        <value>
+            <drawSize>(3,2)</drawSize>
+        </value>
+    </Operation>
+</Patch>
