@@ -95,6 +95,32 @@
                         </settings>
                     </li>
                     <li Class="XmlExtensions.Setting.Gap" />
+                    <li Class="XmlExtensions.Setting.Section">
+                        <padding>12</padding>
+                        <settings>
+                            <li Class="XmlExtensions.Setting.Checkbox">
+                                <label>Components Production Work</label>
+                                <key>component_toggle</key>
+                                <defaultValue>true</defaultValue>
+                                <tKey>854ST_component_toggle</tKey>
+                            </li>
+                            <li Class="XmlExtensions.Setting.ToggleableSettings">
+                                <key>component_toggle</key>
+                                <caseTrue>
+                                    <li Class="XmlExtensions.Setting.Slider">
+                                        <key>component_work_mult</key>
+                                        <label>Component Work Multiplier: {component_work_mult}</label>
+                                        <defaultValue>0.75</defaultValue>
+                                        <min>0</min>
+                                        <max>10</max>
+                                        <decimals>2</decimals>
+                                        <tKey>854ST_component_work_mult</tKey>
+                                    </li>
+                                </caseTrue>
+                            </li>
+                        </settings>
+                    </li>
+                    <li Class="XmlExtensions.Setting.Gap" />
                     <li Class="XmlExtensions.Setting.ResetSettings">
                         <label>Reset to Defaults</label>
                         <tKey>854ST_reset</tKey>

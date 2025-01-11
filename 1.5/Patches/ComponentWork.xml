@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="XmlExtensions.OptionalPatch">
+        <modId>anonymous854.SimpleTweaks</modId>
+        <key>component_toggle</key>
+        <defaultValue>true</defaultValue>
+        <caseTrue>
+            <Operation Class="XmlExtensions.UseSetting">
+                <modId>anonymous854.SimpleTweaks</modId>
+                <key>component_work_mult</key>
+                <defaultValue>0.75</defaultValue>
+                <apply>
+                    <Operation Class="XmlExtensions.PatchOperationMath">
+                        <xpath>Defs/RecipeDef[unfinishedThingDef="UnfinishedComponent"]/workAmount</xpath>
+                        <value>{component_work_mult}</value>
+                        <operation>*</operation>
+                    </Operation>
+                </apply>
+            </Operation>
+        </caseTrue>
+    </Operation>
+</Patch>
