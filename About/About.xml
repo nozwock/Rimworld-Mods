@@ -15,6 +15,6 @@
 	</modDependencies>
 	<loadAfter>
 		<li>imranfish.xmlextensions</li>
-		<li>anonymous854.customhdefs</li>
+		<li>anonymous189.customhdefs</li>
 	</loadAfter>
 </ModMetaData>
