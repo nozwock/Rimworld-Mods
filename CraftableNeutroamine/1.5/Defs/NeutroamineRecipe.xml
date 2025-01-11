@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef>
+		<defName>CN_MakeNeutroamine</defName>
+		<recipeUsers>
+			<li>DrugLab</li>
+		</recipeUsers>
+		<label>make neutroamine</label>
+		<description>Make neutroamine</description>
+		<jobString>Making neutroamine</jobString>
+		<workAmount>300</workAmount>
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<researchPrerequisite>DrugProduction</researchPrerequisite>
+        <uiIconThing>Neutroamine</uiIconThing>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PsychoidLeaves</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SmokeleafLeaves</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Neutroamine>1</Neutroamine>
+		</products>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>PsychoidLeaves</li>
+				<li>SmokeleafLeaves</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSkill>Crafting</workSkill>
+	</RecipeDef>
+	
+</Defs>

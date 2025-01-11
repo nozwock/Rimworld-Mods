@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Craftable Neutroamine</name>
+	<packageId>anonymous495.CraftableNeutroamine</packageId>
+	<supportedVersions>
+		<li>1.5</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>imranfish.xmlextensions</packageId>
+			<displayName>XML Extensions</displayName>
+			<downloadUrl>https://github.com/15adhami/XmlExtensions/releases</downloadUrl>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2574315206</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>imranfish.xmlextensions</li>
+		<li>anonymous189.customhdefs</li>
+	</loadAfter>
+</ModMetaData>
